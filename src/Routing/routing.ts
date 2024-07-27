@@ -38,9 +38,7 @@ export default userRouting;
 userRouting.get('/login', (request: express.Request, response: express.Response) => {
 
     let body = request.body;
-    // let jsonResponse = JSON.parse(body)
-    // response.status(200)
-    // response.send(`<h1>${jsonResponse}</h1>`)
+ 
 
     if (request.statusCode == 200 && body.name == 'shahwaiz') {
         response.status(200).json({
